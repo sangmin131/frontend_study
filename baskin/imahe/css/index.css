@@ -1,0 +1,175 @@
+a{text-decoration: none;
+}
+header{
+width: 100%;
+
+}
+.top_area{
+  display: flex;
+  justify-content: center;
+align-items: center;
+border-bottom: 11px #483834;
+background-image: url(http://www.baskinrobbins.co.kr/assets/images/common/bg_header.gif);
+}
+
+
+.inner > .logo > img{
+position: absolute;
+display: flex;
+right: 50%;
+left: 50%;
+
+}
+.inner_header .top_area .inner{
+display: flex;
+width: 1200px;
+height: 136px;
+position: relative;
+margin-top: 21px;
+
+
+
+}
+.sns{
+
+
+  position: absolute;
+  top: 50%;
+  
+}
+.sns > .sns_icon {
+ display: flex;
+position: absolute;
+height: 68px;
+top: 0;
+bottom: 0;
+margin: auto;
+}
+.sns > .sns_icon > li{
+display: flex;
+  justify-content: center;
+align-items: center;
+padding-right: 10px;
+}
+
+.inner .etc > ul{
+  display: flex;
+}
+.etc > ul{
+  position: absolute;
+  right: 0;
+ margin-top: 30px;
+}
+
+
+.etc > ul > li{
+  justify-content: center;
+  align-items:center ;
+  display: flex;
+  padding-left: 20px;
+}
+
+.drop_menu{
+  border-top: 11px #483834;
+  background-color: #fff;
+  width: 100%;
+  height: 46px;
+}
+
+.drop_menu .drop_inner{
+  display: flex;
+justify-content: center;
+align-items: center;
+border-top: solid 1px #483834;
+border-bottom: solid 1px #483834;
+}
+.drop_menu .drop_inner .member > ul{
+  display: flex;
+  
+  
+}
+.drop_inner .gnd .gnd_wrap{
+  width: 1200px;
+}
+
+
+.drop_inner .gnd .gnd_wrap > ul{
+display: flex;
+
+}
+.drop_inner .gnd .gnd_wrap > ul > li{
+  height: 46px;
+  padding: 0 59px;
+  color: #483834;
+  font-size: 13px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.main_banner .top_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.animate__slideInUp{
+  animation-duration: .5s
+  
+
+}
+.main_banner .base_logo > a > img{
+  width: 100%;
+
+}
+.promotion {
+    transition: height .4s;
+}
+.promotion .swiper-slide{
+  height: 697px;
+}
+.promotion .swiper-slide > img{
+  width: 100%;
+}
+.promotion .swiper-button-prev,
+  .promotion .swiper-button-next {
+    width: 109px;
+    height: 109px;
+    border-radius: 50%; /* 원 만들기 */
+    top: 700px;
+    z-index: 1;
+    color: #c8c8c8;
+  }
+  .promotion .swiper-button-prev {
+    /* 가운데로 몰아넣고 마진으로 위치 조정 */
+    left: 50%;
+    margin-left: -860px;
+  }
+  .promotion .swiper-button-next {
+    right: 50%;
+    margin-right: -860px;
+  }
+
+  .promotion .swiper-button-prev::after,
+  .promotion .swiper-button-next::after {
+    display: none;
+  }
+  
+  .gnd .gnd_wrap .sub_menu{
+    display: none;
+  
+  }
+  .gnd .gnd_wrap .sub_menu .container{
+    display: flex;
+  }
+
+  .gnd .gnd_wrap > ul li{
+    cursor: pointer;
+  }
+  .gnd .gnd_wrap > ul li:hover .sub_menu{
+    display: block;
+    z-index: 9;
+  }
+  

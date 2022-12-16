@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nintendo</title>
+  <!-- 구글 웹폰트 연결 -->
+  <!-- 구글 웹폰트: 경량화된 오픈 라이선스 폰트, 한글 지원하는지 확인 및 필요한 굵기만 선택해서 연결 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 구글 머티리얼 아이콘 연결 -->
+  <!-- 구글에서 제공하는 머티리얼 스타일의 아이콘, 글자처럼 취급 가능한 장점 -->
+  <!-- 그 외 fontawesome, bootstrap icon 등 다양함 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+  <!-- 스타일 초기화: 브라우저 별로 다른 기본스타일이 적용되는 것을 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- 슬라이드 라이브러리 Swiper.js 연결 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- gsap 연결하기: 순서 주의(main.js에서 사용하니까 더 앞에 위치) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- ScrollToPlugin 연결 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js" integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ScrollMagic.js 연결 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./js/main.js" defer></script>
+</head>
+<header>
+  <div class="inner">
+    <nav class="gnb">
+      <h1><a href="#"><img src="https://www.nintendo.co.kr/images/renew/common/logo_nintendo_red.gif" alt=""></a></h1>
+      <ul class="main-menu">
+        <li>
+          <a href="#">Nintendo Switch</a>
+          <ul class="nintendo-sub-menu">
+            <li><a href="#">Nintendo Switch OLED 모델</a></li>
+            <li><a href="#">Nintendo Switc</a></li>
+            <li><a href="#">Nintendo Switc Lite</a></li>
+            <li><a href="#">기능 특징을 비교</a></li>
+            <li><a href="#">주변기기</a></li>
+            <li><a href="#">Nintendo Switc Online</a></li>
+            <li><a href="#">Nintendo 지킴이 Switc</a></li>
+            <li><a href="#">닌텐도 e숍</a></li>
+        </ul>
+      </li>
+      <li><a href="#">소프트웨어</a></li>
+      <li><a href="#">캐릭터</a></li>
+      <li><a href="#">고객지원</a></li>
+      <li><a href="#">News</a></li>
+        
+      </ul>
+    <div class="right-menu">
+        <a href="#"class="btn-eshop"><img src="https://www.nintendo.co.kr/images/renew/common/btn_head_eshop.gif" alt=""></a>
+        <a href="#"class="material-icons">search</a>
+       
+
+    </div>
+      
+    
+    </nav>
+  </div>
+</header>
+<body>
+  <section class="promotion">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./image/1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/5.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/6.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/7.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./image/8.jpg" alt="">
+        </div>
+      </div>
+    </div>
+</body>
+</html>

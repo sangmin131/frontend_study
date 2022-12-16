@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배스킨 라빈스</title>
+<!-- 구글폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+<!-- 머티리얼 아이콘 -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+<!-- 스타일 초기화 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<link rel="stylesheet" href="./css/index.css">
+</head>
+<!-- 슬라이드 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- js -->
+  <script defer src="./js/index.js"></script>
+  <!-- ScrollMagic.js 연결 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 애니메이션 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+<body>
+  <header>
+    <div class="inner_header">
+      <div class="top_area">
+        <div class="inner">
+          <h1 class="logo">
+            <img src="./logo_baskinrobbins.png" alt="">
+          </h1>
+          <nav class="sns">
+            <ul class="sns_icon">
+              <li>
+                <a href="https://www.facebook.com/baskinrobbinskr/">
+                  <img src="./icon_facebook.png" alt="facebook">
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/settings/email">
+                  <img src="./icon_twitter.png" alt="twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">
+                  <img src="./icon_blog.png" alt="naver blog">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <img src="./icon_instgram.png" alt="instagram">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/premium">
+                  <img src="./icon_youtube.png" alt="youtube">
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="etc">
+            <ul>
+              <li>
+                <a href="#" style="font-size: 11px; color: #483834;">고객센터</a>
+              </li>
+              <li>
+                <a href="#" style="font-size: 11px; color: #483834;">CONTACTUS</a>
+              </li>
+              <li>
+                <a href="#"><img src="./icon_search.png" alt=""></a>
+              </li>
+            </ul>
+              
+            </div>
+          </nav>
+      </div>
+      <div class="drop_menu">
+        <div class="drop_inner">
+          <nav class="member">
+            <ul>
+              <li>
+                <a href="#" style="font-size: 13px; color: palevioletred; font-weight: bolder; padding-right:23px;">LOGIN </a>
+              </li>
+              <li>
+                <a href="#"style="font-size: 13px; color: gray; font-weight: bolder; padding-right:23px;">JOIN</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="drop_gnb">
+
+          </nav>
+          <nav class="gnd">
+            <div class="gnd_wrap">
+              <ul class="block">
+                <li><a href="#">FLAVOR OF THE MONTH</a>
+                    <ul class="sub_menu">
+                      <div class="container">
+                        <li><a href="#"><img src="http://www.baskinrobbins.co.kr/assets/images/common/img_happypoint_app.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="../imahe/img/dropmenu (1).png" alt=""></li>
+
+                      </div>
+                    </ul>
+                    </li>
+                <li><a href="#"></a>MENU</li>
+                <li><a href="#"></a>영양 성분 및 알레르기</li>
+                <li><a href="#"></a>EVENT</li>
+                <li><a href="#"></a>STORE</li>
+                <li><a href="#"></a>ABOUT</li>
+              </ul>
+            </div>
+            <div class="drop_gnd">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main_banner">
+      <div class="top_banner">
+        <a href="#"class="top_logo" >
+          <img class="fade" src="./top_banner.jpg" alt="로고">
+        </a>
+      </div>
+      <div class="base_logo">
+        <a href="#">
+          <img src="./base_topbanner.jpg" alt="">
+        </a>
+      </div>
+    </div>
+    <section class="promotion">
+      <div class="inner">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../imahe/img/3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../imahe/img/4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../imahe/img/5.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../imahe/img/6.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/8.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../imahe/img/9.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <span class="material-icons"><img src="./img/btn_banner_prev.png" alt=""></span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="material-icons"><img src="./img/btn_banner_next.png" alt=""></span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

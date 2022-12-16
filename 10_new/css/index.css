@@ -1,0 +1,153 @@
+/* 공통스타일 */
+a{
+  text-decoration: none;
+  }
+ 
+ 
+  header{
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+  }
+ 
+  .inner{
+    width: 2000px;
+    position: relative;
+   
+  }
+  img{
+    
+    display: block;
+  }
+  header .top__menubg{
+    width: 100%;
+    background-color: #eee;
+  }
+  
+  
+  header .top__menubg > .top_menu{
+    width: 1200px;
+    height: 40px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+header .top__menubg > .top_menu ul{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+header .top__menubg > .top_menu ul > li{
+  padding:10px 20px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  
+  
+  }
+  
+  header .top__menubg > .top_menu ul > li:first-child{
+    border-right: 1px solid;
+    padding-right: 20px;
+    color: rgb(228, 228, 228);
+  }
+  
+  header .top__menubg > .top_menu ul > li > a{
+    color: rgb(51, 51, 51);
+    font: 14px;
+    
+  }
+  header .top__menubg > .top_menu ul > li.logo__bg{
+    width: 20px;
+    background-color: rgb(47, 28, 17);
+  
+  }
+  header .low__menubg{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  header .low__menubg .low_menu{
+    width:1200px;
+    margin:0 auto;
+
+  }
+  header .low__menubg .low_menu ul{
+    display: flex;
+   
+    
+  }
+  header .low__menubg .low_menu ul > li {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(47, 28, 17);
+    line-height: 100px;
+    letter-spacing: 0.025em;
+    padding: 0 31px 0 32px;
+  }
+  header .low__menubg .low_menu ul > li > a{
+    font-size: 15px;
+    color: rgb(75,38,22);
+  }
+  header .low__menubg .low_menu ul > li:hover {
+    color: rgb(207, 102, 26);
+    cursor: pointer;
+  }
+
+
+  header .low__menubg .low_menu ul > li:first-child {
+    padding-left: 0;
+  }
+  header .low__menubg .low_menu ul > li:last-child {
+    padding-right: 0;
+  }
+.inner > .drop__menu{
+  background-color: #eee;
+  width: 1260px;
+  height: 362px;
+  position: fixed;
+  top: 140px;
+  left: 7%;
+  display: none;
+}
+
+  .inner:hover >.drop__menu {
+  display: block;
+}
+
+  header .low__menubg .low_menu ul > li.inner ul > li a{
+    color: rgb(48, 27, 17);
+  }
+ 
+
+.low_menu > ul > .inner > .inner__container > li .inner__text{
+  color: #000;
+  background-color: aqua;
+
+}
+
+.visual .inner .title{
+
+  margin-top: 141px;
+}
+
+.visual .inner > h2{
+  margin-bottom: 35px;
+  font-family: 'Archer-Semibold', 'NanumBarunGothic';
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(207,102,26);
+  text-align: center;
+}
+.promotion .swiper{
+  width: 100%;
+  height: 100%;
+}
+
+/* .promotion .inner {
+  padding: 0;
+} */
