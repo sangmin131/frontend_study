@@ -16,13 +16,13 @@
     // 취소 입력시: 어른 모시고 다시 오렴~
 
     const height = prompt('신장을 입력하세요.', '0');
-    const result = confirm('부모님과 함께 오셨나요?');
     // 풀이4
     let msg = '놀이기구 이용 가능';
     if(height >= 150){
       document.write('놀이기구 이용 가능');
     }
     else if (result) {
+      const result = confirm('부모님과 함께 오셨나요?');
       document.write('좋은 시간 보내세요.')
     }
         else{
