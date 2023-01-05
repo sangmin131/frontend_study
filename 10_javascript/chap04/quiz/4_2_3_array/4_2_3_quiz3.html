@@ -14,18 +14,19 @@
 
     // 풀이3
     const disliked = prompt('싫어하는 과일은?');
+  
     
-    
-const valueToRemove = disliked;
-
+let a = 0;
 for(let i = 0; i < fruits.length; i++) {
-    if (fruits[i] === valueToRemove) {
+    if (fruits[i] === disliked) {
         fruits.splice(i, 1);
+        a = a + 1;
     }
 }
-
+if(a === 0){
+alert('제거할 과일이 없습니다.');
+};
 console.log(fruits);
-
   </script>
 </head>
 <body>
