@@ -11,11 +11,28 @@
     const points = [40, 100, 1, 5, 25, 10];
 
     // 풀이3
-    const min = Math.min.apply(null, points);
-    const max = Math.max.apply(null, points);
+    // const min = Math.min.apply(null, points);
+    // const max = Math.max.apply(null, points);
 
+    let max = points[0];
+    let min = points[0];
+
+    for(const el of points){
+      max = Math.max(max, el)
+      min = Math.min(min, el)
+      
+    }
     console.log(min);
     console.log(max);
+
+
+    //sort()이용
+    points.sort(function(a, b){return a - b;});
+    document.write(`최소값: ${points[0]}<br>`);
+    document.write(`최대값: ${points[points.length -1]}<br>`);
+
+    // 참고 - spread 연산자
+
   </script>
 </head>
 <body>

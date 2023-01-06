@@ -18,9 +18,13 @@
     // console.log(originArr); 
 
     // 풀이1
-    resultArr = originArr.slice(0, 4); // 지정된 시작과 끝 위치 구간만큼 잘라내서 새로운 배열로 반환
+
+    const resultArr = originArr.slice(0, 4); // 지정된 시작과 끝 위치 구간만큼 잘라내서 새로운 배열로 반환
     console.log(originArr);
     console.log(resultArr);
+    // 참고 Es6차 spread연산자
+    const copyArr5 = [...originArr]; // 1, 2, 4 ,0 변수 안에있는 값을  펼침
+    console.log(copyArr5);
   </script>
 </head>
 <body>

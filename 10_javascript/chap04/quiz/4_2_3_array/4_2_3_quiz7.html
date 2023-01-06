@@ -11,20 +11,31 @@
     // 반복문을 이용하여 1~45까지의 랜덤한 정수값을 만들어내고 중복값이 아닐때만 배열에 추가해준다.
     // 로또 번호가 6개가 완성되면 오름차순으로 정렬까지 해서 출력해보세요.
 
+    
     const lottoArr = []; // 빈 배열
-    
     // 풀이7
-    for (i = 0; i < 6; i++){
-      const lo = Math.floor(Math.random()*45)+1;
-      lottoArr[i] = lo;
-      for(j = i-1; j>=0; j--){
-        if(lottoArr[i] === lottoArr[j]){
-          i--;
-        }
+    // for (i = 0; i < 6; i++){
+    //   const lo = Math.floor(Math.random()*45)+1;
+    //   lottoArr[i] = lo;
+    //   for(j = i-1; j>=0; j--){
+    //     if(lottoArr[i] === lottoArr[j]){
+    //       i--;
+    //     }
+    //   }
+    // };
+    // document.write((lottoArr.sort(function(a, b){return a - b;})));
+
+    // 선생님 풀이
+
+    while(lottoArr.length < 6){
+      const randomNum = Math.floor(Math.random()*45)+1;
+      if(!lottoArr.includes(randomNum))//랜덤 로또가 있으면 트루가 나옴 (! 붙여서 같은 값이 없으면)
+      {lottoArr.push(randomNum);
+
       }
-    };
-    
-    document.write(lottoArr);
+    }
+    document.write((lottoArr.sort(function(a, b){return a - b;})));
+
     </script>
 </head>
 <body>

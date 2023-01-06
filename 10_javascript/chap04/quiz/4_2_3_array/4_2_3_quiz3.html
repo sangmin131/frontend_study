@@ -16,16 +16,24 @@
     const disliked = prompt('싫어하는 과일은?');
   
     
-let a = 0;
-for(let i = 0; i < fruits.length; i++) {
-    if (fruits[i] === disliked) {
-        fruits.splice(i, 1);
-        a = a + 1;
-    }
+// let a = 0;
+// for(let i = 0; i < fruits.length; i++) {
+//     if (fruits[i] === disliked) {
+//         fruits.splice(i, 1);
+//         a = a + 1;
+//     }
+// }
+// if(a === 0){
+// alert('제거할 과일이 없습니다.');
+// };
+// console.log(fruits);
+
+const dislkedIndex = fruits.indexOf(disliked) //<- 인덱스 값을 가져옴 바나나를 입력하면 1이라 1 가져옴 
+if (dislkedIndex !== -1){
+  fruits.splice(dislkedIndex, 1);
+}else{
+  alert('제거할 과일이 없습니다.');
 }
-if(a === 0){
-alert('제거할 과일이 없습니다.');
-};
 console.log(fruits);
   </script>
 </head>
