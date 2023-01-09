@@ -99,11 +99,53 @@
 
     // 리다이렉트 하기
     function href(){
-      location.href = 'https://www.naver.com';
+      location.href = 'https://www.naver.com'; // 히스토리가 쌓임
     };
     function replace(){
-      location.replace('https://www.naver.com');
+      location.replace('https://www.naver.com'); //히스토리를 새로 쌓음, 뒤로가기 불가
     };
+
+    // 3) history 객체
+    // 사용자가 방문한 사이트의 기록을 남기고, 이전과 다음 페이지로 다시 돌아갈 수 있도록 제공
+
+    document.write('<h2>history 관련 속성</h2>')
+    document.write(`length:${history.length}`); //방문 기록에 저장된 URL 페이지 갯수
+    // 이전, 다음 페이지로 이동
+    // 브라우저 뒤로 가기, 앞으로 가기와 동일
+    function back(){
+      history.back();
+    }
+    function forward(){
+      history.forward();
+    }
+
+
+    // 4) navigator 객체
+    // 현재 방문자가 사용하는 브라우저와 운영체제 정보를 제공
+    document.write('<h2>navigato 관련 속성</h2>')
+    document.write(`userAgent:${navigator.userAgent}`);// 종합 정보 
+
+    const info = navigator.userAgent.toLowerCase();
+    let osImg = null;
+    if(info.indexOf('windows') >= 0){
+      osImg = 'windows.png';
+    }else if(info.indexOf('macintosh') >= 0){
+      osImg = 'macintosh.png';
+    }else if(info.indexOf('iphone') >= 0){
+      osImg = 'iphone.png';
+    }else if(info.indexOf('android') >= 0){
+      osImg = 'android.png';
+    }
+    
+    document.write(`<img src="images/${osImg}">`);
+
+
+
+
+
+
+
+
 
 
   </script>
@@ -121,5 +163,9 @@
   <h1>리다이렉트 하기</h1>
   <button onclick="href()">naver로 이동</button>
   <button onclick="replace()">naver로 이동</button>
+
+  <h1>이전, 다음 페이지로 이동</h1>
+  <button onclick="back()">뒤로가기</button>
+  <button onclick="forward()">앞으로가기</button>
 </body>
 </html>
