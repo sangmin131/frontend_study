@@ -86,6 +86,25 @@
     // 현재 url 과 관련된 속성과 메소드 제공
     // 예: 현재 url 정보(속성), 새로 고침(메소드)
     document.write('<h2>location 관련 속성</h2>')
+    document.write(`origin:${location.origin}<br>`);
+    document.write(`protocal:${location.protocal}<br>`);
+    document.write(`host:${location.hostn}<br>`);
+    document.write(`hostname:${location.hostname}<br>`);
+    document.write(`port:${location.port}<br>`);
+    document.write(`href:${location.href}<br>`);
+    document.write(`search:${location.search}<br>`);
+
+
+    //location.reload(); //새로고침
+
+    // 리다이렉트 하기
+    function href(){
+      location.href = 'https://www.naver.com';
+    };
+    function replace(){
+      location.replace('https://www.naver.com');
+    };
+
 
   </script>
 </head>
@@ -97,5 +116,10 @@
   <h1>setTimout() 동작을 취소하려면 3초 안에 버튼을 클릭하세요</h1>
   <h2 class="happy"></h2>
   <button onclick='clearTimeout(myTimeout)'>멈추기</button>
+
+
+  <h1>리다이렉트 하기</h1>
+  <button onclick="href()">naver로 이동</button>
+  <button onclick="replace()">naver로 이동</button>
 </body>
 </html>
