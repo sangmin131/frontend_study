@@ -12,8 +12,12 @@
 
     // 풀이2
     const userName = prompt('당신의 영문 이름은?', '');
-
+    const userPhone = prompt('휴대폰 번호를 입력하세요','');
     
+    document.write(userName.toUpperCase());
+    const a = userPhone.substring(0, userPhone.length - 4) + '****';
+
+    document.write(a);
   </script>
 </head>
 <body>
