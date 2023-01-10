@@ -14,15 +14,17 @@
 
     // 1초가 1000ms
     // 풀이3
-    function printNumbers(a, b){
-      let result = 5;
-      for(i = 5;i > result; i++){
-        document.write(printNumbers);
-      }
 
-    }
-    setInterval(counter, 1000);
-    printNumbers(5, 10);
+
+    function printNumbers(a, b){
+            let res = a
+            let timer1 = setInterval(function(){
+            document.write(res)
+            res++
+            if(res > b){clearInterval(timer1)}
+          },1000)
+        }
+        printNumbers(5, 10)
   </script>
 </head>
 <body>
