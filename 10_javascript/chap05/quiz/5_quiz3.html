@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,18 +17,22 @@
     // 풀이3
 
 
-    function printNumbers(a, b){
-            let res = a
-            let timer1 = setInterval(function(){
-            document.write(res)
-            res++
-            if(res > b){clearInterval(timer1)}
-          },1000)
-        }
-        printNumbers(5, 10)
+    printNumbers = (a, b) => {
+      let res = a
+      let timer1 = setInterval(() => {
+        document.write(res)
+        res++
+        if (res > b) { clearInterval(timer1) }
+      }, 1000)
+    }
+    printNumbers(5, 10)
+
+
   </script>
 </head>
+
 <body>
-  
+
 </body>
+
 </html>

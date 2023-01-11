@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,7 @@
 
     const x = prompt('x?', '');
     const n = prompt('n?', '');
-    
+
     // function pow(a, b){
     //     let res = 1;
     //   for(i = 1; i <= b ;i++){
@@ -32,20 +33,20 @@
     // const result = pow (3, 3); 
     // document.write(result);
 
-    
 
-// 선생님풀이
 
-function pow(x, n){
- let result = x;
- for (let i = 1; i < n; i++){
-  result *=x;
- }
- return result;
-}
+    // 선생님풀이
+
+    function pow(x, n) {
+      let result = x;
+      for (let i = 1; i < n; i++) {
+        result *= x;
+      }
+      return result;
+    }
     document.write(pow(x, n));
 
-    if (n < 1){
+    if (n < 1) {
       alert(`${n}에 양수를 입력해.`)
     }
 
@@ -53,7 +54,9 @@ function pow(x, n){
 
   </script>
 </head>
+
 <body>
-  
+
 </body>
+
 </html>
