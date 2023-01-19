@@ -7,7 +7,11 @@ import JsxUse from './chapter3/3.4/JsxUse';
 import Libraty from './chapter3/Libraty';
 import Clock from './chapter4/Clock';
 import Profile from './chapter5/5.3/Profile';
-
+import PropUse from './chapter5/5.3/PropUse';
+import CommentList from './chapter5/CommentList';
+import NotificationList from './chapter6/NotificationList';
+import Counter from './chapter7/7.2/Counter';
+import CounterEffect from './chapter7/7.3/CounterEffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -30,10 +34,25 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // }, 1000);
 
 // 5장 예제 
-root.render(
-<Profile />
-  );
+// root.render(
+// <CommentList />
+//   );
 
+
+// 6장 예제
+// root.render(
+// <NotificationList />
+//   );
+
+
+// 7장 예제
+// root.render(
+//   <Counter />
+//     );
+
+root.render(
+  <CounterEffect />
+    );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
