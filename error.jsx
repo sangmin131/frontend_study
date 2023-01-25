@@ -15,3 +15,4 @@
 // useState 기본 구성
 // const [count,setCount] = useState(0);
 // 관례 [count,setCount] 이면 이름 카멜케이스로 맞춰야함 [sangmin,setSangmin] 이런식으로 함수명 지으면 카멜케이스 set변수명
+
