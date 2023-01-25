@@ -19,38 +19,38 @@ import HeavyCalculator from './chapter7/7.4/HeavyCalculator';
 import ParentComponent from './chapter7/7.5/ParentComponent';
 import TextInputWithFocusButton from './chapter7/7.6/TextInputWithFocusButton';
 import ComponentVariable from './chapter7/7.6/ComponentVariable';
+import InputContainer from './chapter7/7.8/ex2/InputContainer';
+import ReactBlog from './test/App1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
-//     <App />
+//   <App />
 // );
+
 // 3장 예제
-
 // root.render(
-//     // <JsxUse />
-//     // <Libraty />
+//   // <JsxUse />
+//   <Library />
 // );
-
 
 // 4장 예제
-// 1초마다 Clock 컴포넌트를 root div 에 렌더링 하는 코드 
+// 1초 마다 Clock 컴포넌트를 root div에 렌더링 하는 코드
 // setInterval(() => {
 //   root.render(
 //     <Clock />
 //   );
 // }, 1000);
 
-// 5장 예제 
+// 5장 예제
 // root.render(
-// <CommentList />
-//   );
-
+//   // <PropUse />
+//   <CommentList />
+// );
 
 // 6장 예제
 // root.render(
-// <NotificationList />
-//   );
-
+//   <NotificationList />
+// );
 
 // 7장 예제
 root.render(
@@ -63,7 +63,10 @@ root.render(
   // <HeavyCalculator />
   // <ParentComponent />
   // <TextInputWithFocusButton />
-  <ComponentVariable />
+  // <ComponentVariable />
+  // <InputContainer />
+  <ReactBlog />
+
 );
 
 // If you want to start measuring performance in your app, pass a function
