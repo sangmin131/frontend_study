@@ -14,7 +14,8 @@ function ReactBlog() {
       </div>
 
       <button onClick={() => {
-        글제목변경.sort();
+        let copy1 = [...글제목.sort()];
+        글제목변경(copy1);
       }}>가나다순 정렬</button>
 
       <button onClick={() => {
@@ -37,10 +38,23 @@ function ReactBlog() {
         <h4>{글제목[2]}</h4>
         <p>1월 25일 방행</p>
       </div>
+      <Modal/>
+
     </div>
 
   );
 }
+
+function Modal() {
+  return (
+    <div className="modal">
+      <h4>제목</h4>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>
+  );
+}
+
 
 export default ReactBlog;
 

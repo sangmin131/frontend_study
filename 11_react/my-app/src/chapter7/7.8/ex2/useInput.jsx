@@ -6,8 +6,12 @@ function useInput(initialValue) {
   const handleChange = (e) => {
     setInputValue(e.target.value);
   };
+  const handleSubmit = () => {
+    alert(inputValue);
+    setInputValue('');
+  }
 
-  return [inputValue, handleChange];
+  return [inputValue, handleChange, handleSubmit];
 }
 
 export default useInput;
