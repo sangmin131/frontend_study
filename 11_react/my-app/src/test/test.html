@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+
+    // 생성자함수는 함수명에 첫글자는 대문자로 시작해야한다.
+    // 그리고 new 를 붙여야한다
+
+
+    // function Item(title, price) {
+    //   this.title = title;
+    //   this.price = price;
+    //   this.showPrice = function () {
+    //     console.log(`가격은 ${price}입니다.`);
+    //   };
+    // }
+    // const item1 = new Item('인형', 3000);
+    // const item2 = new Item('가방', 4000);
+    // const item3 = new Item('지갑', 5000);
+
+    // console.log(item1, item2, item3);
+
+    // item3.showPrice();
+
+
+    // 객체 복제하는법 Object.assign 중복값 덮어쓰기함
+    // const copy = Object.assign({빈객체}, 복제할원본 , 복제할원본2) 두개다 빈객체에 들어감
+    //  Object.assign({성별 : 남자}, 원본) -> 원본안에 성별:남자 객체가 추가 
+
+    // 객체 키값만 배열로 반환
+    // Object.keys();
+    // Object.keys(배열로바꿀 변수); 해주면 객체의 키값이 배열로 반환함
+
+    // 객체 값만 받아오기
+    // Object.values(); 해주면 객체의 벨류값이 배열로 반환함
+
+    // 객체 키/값 배열 반환
+    // Object.entries(); -> [`name`,`이상민`], [`age`, `30`] 이런식으로
+
+    // 배열을 객체로 
+    // Object.fromEntries();  [`name`,`이상민`], [`age`, `30`] -> {name: `이상민`, age: 30} 이런식으로
+
+
+    const n = 'name';
+    const a = 'age';
+
+    const user = {
+      [n]: '이상민',
+      [a]: 30,
+    }
+    console.log(user);
+
+    function makeobj(key, val) {
+      return {
+        [key]: val,
+      };
+    }
+    const obj = makeobj('이상민', 30);
+
+    console.log(obj);
+
+    const user1 = Object.assign({}, user);
+    user1.name = '뉴진스';
+
+    console.log(user);
+    console.log(user1);
+
+    // 소수점 자릿수 toFixed(보고싶은 자릿수); <- 문자열 반환 Number로 변환해야함
+  </script>
+
+
+  <title>Document</title>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
