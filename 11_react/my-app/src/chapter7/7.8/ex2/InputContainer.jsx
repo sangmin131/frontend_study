@@ -2,13 +2,7 @@ import { useState } from "react";
 import useInput from "./useInput";
 
 function InputContainer() {
-  const [inputValue, handleChange] = useInput('');
-
-  // Quiz: 커스텀 훅에 넣어보기
-  const handleSubmit = () => {
-    alert(inputValue);
-    // setInputValue('');
-  };
+  const [inputValue, handleChange, handleSubmit] = useInput('');
 
   return (  
     <div>
