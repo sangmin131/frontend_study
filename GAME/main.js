@@ -6,11 +6,15 @@ canvas.height = window.innerHeight - 100;
 
 let dinoImg = new Image();
 dinoImg.src = `dino.png`;
+let kitImg = new Image();
+kitImg.src = `kit.png`;
+
+
 
 const dino = {
   x: 10,
   y: 200,
-  width: 40,
+  width: 50,
   height: 50,
   draw() {
     // ctx.fillStyle = `green`;
@@ -24,13 +28,14 @@ const dino = {
 class Cactus {
   constructor() {
     this.x = 300;
-    this.y = 200;
+    this.y = 220;
     this.width = 10;
-    this.height = 50;
+    this.height = 30;
   }
   draw() {
     ctx.fillStyle = `red `;
     ctx.fillRect(this.x, this.y, this.width, this.height);
+    
   }
 }
 
