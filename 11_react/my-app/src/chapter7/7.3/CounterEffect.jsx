@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function CounterEffect(props) {
+function CounterEffect() {
   const [count, setCount] = useState(0);
 
   // componentDidMount, componentDidUpdate와 같은 방식으로 작동

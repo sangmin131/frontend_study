@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Counter(props) {
+function Counter() {
   // state를 사용해서 값이 바뀔때마다 재렌더링이 되도록 하겠다.
   const [count, setCount] = useState(0); // 초기값 0
   // useState()의 결과로 배열이 반환됨 -> [0, set함수]

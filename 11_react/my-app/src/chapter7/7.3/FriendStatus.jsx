@@ -30,3 +30,4 @@ function FriendStatus(props) {
 }
 
 export default FriendStatus;
+

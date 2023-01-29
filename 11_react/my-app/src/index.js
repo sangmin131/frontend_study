@@ -63,13 +63,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // );
 
 // 7장 예제
-// root.render(
+root.render(
 //   // <Counter />
 //   // <CounterEffect />
 //   // <SetStateMerge />
-//   // <EffectSummary />
+  <EffectSummary />
 //   // <EffectContainer />
-//   // <TimerContainer />
+  // <TimerContainer />
 //   // <HeavyCalculator />
 //   // <ParentComponent />
 //   // <TextInputWithFocusButton />
@@ -77,7 +77,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //   // <InputContainer />
 //   // <ReactBlog />
 //   // <Accommodate />
-// );
+);
 
 // // 8장 예제
 // root.render(
@@ -87,16 +87,31 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // );
 // 9장 예제
-const messages = ['React', 'Re:React', 'Re:Re:React'];
-root.render(
-// {/* <Greeting isLoggedIn={true} /> */}
-// {/* <LoginControl /> */}
-<Mailbox unreadMessages = {messages}/> 
-// {/* <LoginControlRefactoring /> */}
-// {/* <MainPage /> */}
-// {/* <LandingPage />  */}
-);
+// const messages = ['React', 'Re:React', 'Re:Re:React'];
+// root.render(
+// // {/* <Greeting isLoggedIn={true} /> */}
+// // {/* <LoginControl /> */}
+// <Mailbox unreadMessages = {messages}/> 
+// // {/* <LoginControlRefactoring /> */}
+// // {/* <MainPage /> */}
+// // {/* <LandingPage />  */}
+// );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+// 이해 안되는거
+
+// 7.3 FriendStatus 전부 이해안됌
+
+
+// 7.3 EffectSummary 에서 e
+
+// 값이 변경되면 화면을 새로고침하기위해 state 씀
+
+// <p>이름: {name}</p>
+// e.target.value e.target <- input 태그  value 가 값을 입력
+// <input type="text" value={name} onChange={e => setName(e.target.value)} />
+// 인풋에 값이 들어오면 value={name}은 이름으로 전달 되고 재랜더링하기위해  ? onChange 역활  input 태그의 포커스를 벗어났을때 (즉, 입력이 끝났을때) 발생하는 이벤트이다.
+// e 는 매개변수자리에 들어가는데 어떻게 적용되는지 궁금
