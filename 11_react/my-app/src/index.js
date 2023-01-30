@@ -31,6 +31,7 @@ import Mailbox from './chapter9/9.3/Mailbox';
 import LoginControlRefactoring from './chapter9/9.3/LoginControlRefactoring';
 import MainPage from './chapter9/9.4/MainPage';
 import LandingPage from './chapter9/LandingPage';
+import Reservation from './chapter11/11.4/Reservation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -63,44 +64,51 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // );
 
 // 7장 예제
+// root.render(
+// //   // <Counter />
+// //   // <CounterEffect />
+// //   // <SetStateMerge />
+//   <EffectSummary />
+// //   // <EffectContainer />
+//   // <TimerContainer />
+// //   // <HeavyCalculator />
+// //   // <ParentComponent />
+// //   // <TextInputWithFocusButton />
+// //   // <ComponentVariable />
+// //   // <InputContainer />
+// //   // <ReactBlog />
+// //   // <Accommodate />
+// );
+
+// // // 8장 예제
+// // root.render(
+// //   // <Toggle />
+// //   // <MyButton />
+// //   // <ConfirmButton />
+
+// // );
+// // 9장 예제
+// // const messages = ['React', 'Re:React', 'Re:Re:React'];
+// // root.render(
+// // // {/* <Greeting isLoggedIn={true} /> */}
+// // // {/* <LoginControl /> */}
+// // <Mailbox unreadMessages = {messages}/> 
+// // // {/* <LoginControlRefactoring /> */}
+// // // {/* <MainPage /> */}
+// // // {/* <LandingPage />  */}
+// // );
+// // If you want to start measuring performance in your app, pass a function
+// // to log results (for example: reportWebVitals(console.log))
+// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+// reportWebVitals();
+
+
+// 11장
+
 root.render(
-//   // <Counter />
-//   // <CounterEffect />
-//   // <SetStateMerge />
-  <EffectSummary />
-//   // <EffectContainer />
-  // <TimerContainer />
-//   // <HeavyCalculator />
-//   // <ParentComponent />
-//   // <TextInputWithFocusButton />
-//   // <ComponentVariable />
-//   // <InputContainer />
-//   // <ReactBlog />
-//   // <Accommodate />
+  <Reservation />
 );
-
-// // 8장 예제
-// root.render(
-//   // <Toggle />
-//   // <MyButton />
-//   // <ConfirmButton />
-
-// );
-// 9장 예제
-// const messages = ['React', 'Re:React', 'Re:Re:React'];
-// root.render(
-// // {/* <Greeting isLoggedIn={true} /> */}
-// // {/* <LoginControl /> */}
-// <Mailbox unreadMessages = {messages}/> 
-// // {/* <LoginControlRefactoring /> */}
-// // {/* <MainPage /> */}
-// // {/* <LandingPage />  */}
-// );
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
-
 // 이해 안되는거
 
 // 7.3 FriendStatus 전부 이해안됌
