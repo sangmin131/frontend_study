@@ -32,6 +32,8 @@ import LoginControlRefactoring from './chapter9/9.3/LoginControlRefactoring';
 import MainPage from './chapter9/9.4/MainPage';
 import LandingPage from './chapter9/LandingPage';
 import Reservation from './chapter11/11.4/Reservation';
+import ReservationRefactoring from './chapter11/11.4/ReservationRefactoring';
+import SignUp from './chapter11/11.4/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -107,8 +109,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // 11장
 
 root.render(
-  <Reservation />
-);
+  // <Reservation />
+  // <ReservationRefactoring />
+  <SignUp />
+  );
+
 // 이해 안되는거
 
 // 7.3 FriendStatus 전부 이해안됌
