@@ -34,6 +34,12 @@ import LandingPage from './chapter9/LandingPage';
 import Reservation from './chapter11/11.4/Reservation';
 import ReservationRefactoring from './chapter11/11.4/ReservationRefactoring';
 import SignUp from './chapter11/11.4/SignUp';
+import Calculator from './chapter12/Calculator';
+import WelcomeDialog from './chapter13/13.1.1.1/WelcomeDialog';
+import SplitPaneSection from './chapter13/13.1.1.2/SplitPaneSection';
+import DialogContainer from './chapter13/13.1.2/DialogContainer';
+import SignUpDialog from './chapter13/13.1.3/SignUpDialog';
+import CouterContainer from './chapter7/7.2/CounterContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -111,7 +117,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <Reservation />
   // <ReservationRefactoring />
-  <SignUp />
+  // <SignUp />
+
+  // 12장
+
+  // <Calculator />
+
+  // 13장
+  // <WelcomeDialog/>
+  // <SplitPaneSection/>
+  // <DialogContainer/>
+  // <SignUpDialog/>
+  <CouterContainer />
   );
 
 // 이해 안되는거
