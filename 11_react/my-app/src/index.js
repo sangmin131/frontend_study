@@ -40,6 +40,10 @@ import SplitPaneSection from './chapter13/13.1.1.2/SplitPaneSection';
 import DialogContainer from './chapter13/13.1.2/DialogContainer';
 import SignUpDialog from './chapter13/13.1.3/SignUpDialog';
 import CouterContainer from './chapter7/7.2/CounterContainer';
+import Card from './chapter13/Card';
+import ProfileCard from './chapter13/ProfileCard';
+import DarkOrLight from './chapter14/DarkOrLight';
+import StyledPage from './chapter15/StyledPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -128,7 +132,10 @@ root.render(
   // <SplitPaneSection/>
   // <DialogContainer/>
   // <SignUpDialog/>
-  <CouterContainer />
+  // <CouterContainer />
+  // <ProfileCard/>
+  // <DarkOrLight/>\
+  <StyledPage/>
   );
 
 // 이해 안되는거
