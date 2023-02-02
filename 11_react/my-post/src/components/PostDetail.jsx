@@ -27,3 +27,4 @@ function PostDetail(props) {
 }
 
 export default PostDetail;
+

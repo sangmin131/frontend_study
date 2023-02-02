@@ -44,6 +44,7 @@ import Card from './chapter13/Card';
 import ProfileCard from './chapter13/ProfileCard';
 import DarkOrLight from './chapter14/DarkOrLight';
 import StyledPage from './chapter15/StyledPage';
+import SimpleRouter from './chapter16/SimpleRouter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -135,7 +136,8 @@ root.render(
   // <CouterContainer />
   // <ProfileCard/>
   // <DarkOrLight/>\
-  <StyledPage/>
+  // <StyledPage/>
+  <SimpleRouter/>
   );
 
 // 이해 안되는거
