@@ -36,30 +36,31 @@ const StyledButton = styled.button`
 
 // 새로운 항목을 입력하고 추가할 수 있는 컴포넌트
 // state를 통해 input의 상태를 관리
-function TodoInsert({onInsert}) {
+function TodoInsert({ onInsert }) {
   const [value, setValue] = useState('');
+
   const handleChange = (e) => {
     setValue(e.target.value);
   };
 
   const handleSubmit = (e) => {
     onInsert(value);
-    setValue(''); //value값 초기화 
+    setValue(''); // value값 초기화
+
     // submit 이벤트가 발생시키는 새로고침을 방지
     e.preventDefault();
   };
 
-
   return (  
-    // form 태그 사용 시 input에서 엔터키를 눌렀을 대도 submit 이벤트 발생
-    // 일반적으로 keyup 이벤트를 통해 엔터키를 감지히는 로직을 작성
-    // event.key === 'Enter' 
+    // form 태그 사용 시 input에서 엔터키를 눌렀을 때도 submit 이벤트 발생
+    // 일반적으로 keyup 이벤트를 통해 엔터키를 감지하는 로직을 작성
+    // event.key === 'Enter'
     <TodoInsertWrapper onSubmit={handleSubmit}>
-      <StyledInput type="text"
-      placeholder="할 일을 입력하세요." 
-      value={value}
-      onChange={handleChange}
-      
+      <StyledInput 
+        type="text" 
+        placeholder="할 일을 입력하세요." 
+        value={value}
+        onChange={handleChange}
       />
       <StyledButton type="submit">
         <AddIcon />

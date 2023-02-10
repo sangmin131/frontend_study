@@ -4,6 +4,7 @@ import GamePage from './GamePage';
 import HotGamePage from './HotGamePage';
 import MainPage from './MainPage';
 import NewGamePage from './NewGamePage';
+import NomatchPage from './NomatchPage';
 import PlacePage from './PlacePage';
 // 설치하기
 // npm install react-router-dom
@@ -54,6 +55,9 @@ function SimpleRouter(props) {
           <Route path="hot" element={<HotGamePage />} />
           <Route path="new" element={<NewGamePage />} />
         </Route>
+        {/* *의미 match anything  */}
+        {/* 위에 설정한 라우팅 경로 이외에 경우 */}
+        <Route path="*" element={<NomatchPage/>}/>
       </Routes>
     </BrowserRouter>
   );

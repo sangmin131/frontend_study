@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useRef } from "react";
-
 function TextInputWithFocusButton() {
   const inputEl = useRef(null);
   console.log(inputEl); // 일반적인 자바스크립트 객체를 리턴함

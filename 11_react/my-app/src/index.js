@@ -45,6 +45,7 @@ import ProfileCard from './chapter13/ProfileCard';
 import DarkOrLight from './chapter14/DarkOrLight';
 import StyledPage from './chapter15/StyledPage';
 import SimpleRouter from './chapter16/SimpleRouter';
+import ApiRequest from './chapter17/ApiRequest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -137,7 +138,8 @@ root.render(
   // <ProfileCard/>
   // <DarkOrLight/>\
   // <StyledPage/>
-  <SimpleRouter/>
+  // <SimpleRouter/>
+  <ApiRequest/>
   );
 
 // 이해 안되는거
