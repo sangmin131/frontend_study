@@ -23,7 +23,7 @@ function Main(props) {
   useEffect(() => {
     // 서버에 데이터를 요청했다고 가정
     // ... api call ...
-    dispatch();
+    dispatch(getAllProducts(data));
   }, []);
 
   return (
