@@ -5,6 +5,7 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css'; // bootstrap CSS 추가
 import { Route, Routes } from "react-router-dom";
 import Header from "./pages/Header";
+import Main from "./pages/Main";
 
 const GlobalStyle = createGlobalStyle`
   /* 글로벌(공통) 스타일 */
@@ -36,7 +37,8 @@ function App() {
       {/* Quiz: Header 컴포넌트 추출 및 Outlet 활용하여 라우팅 구성해보기 */}
       <Routes>
         <Route path="/" element={<Header />}>
-          
+          {/* indexL index route(여기서는) default child route*/}
+          <Route index element={<Main />}/>
         </Route>
       </Routes>
 
