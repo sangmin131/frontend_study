@@ -1,16 +1,26 @@
 import React, { useEffect } from 'react';
-import {Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import styled from "styled-components";
 
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
+
+// 리액트에서 이미지 파일 import
 import yonexImg from "../images/yonex.jpg";
 
 // 서버에서 받아온 데이터라고 가정
+import {
+  getAllProducts,
+  getMoreProducts,
+  getMoreProductsAsync,
+  selectProductList,
+  selectStatus
+} from '../features/product/productSlice';
+
 import data from "../data.json";
-import { getAllProducts } from '../features/product/productSlice';
 import ProductListItem from '../components/ProductListItem';
+import { getProducts } from '../api/productAPI';
 const MainBackground = styled.div`
 height: 500px;
 background-image: url(${yonexImg});
@@ -20,8 +30,15 @@ background-position: center;
 `;
 function Main(props) {
   const dispatch = useDispatch();
-  const productList = useSelector((state) => state.product.productList);
-  console.log(productList);
+  // const productList = useSelector((state) => state.product.productList);
+  const productList = useSelector(selectProductList);
+
+
+  // API 요청 상태 가져오기(로딩상태)
+  // 로딩 만들기 추천: react-spinners, Lottie Files
+  const status = useSelector(selectStatus);
+
+
   // 처음 마운팅 됐을때 서버에 상품 목록 데이터를 요청하고
   // 그 결과를 리덕스 스토어에 저장
   useEffect(() => {
@@ -29,6 +46,16 @@ function Main(props) {
     // ... api call ...
     dispatch(getAllProducts(data));
   }, []);
+
+
+  const handleGetMoreProducts = async () => {
+    const reauest = await getProducts();
+    if (!reauest) return;
+
+    // 스토어에 dispatch로 요청 보내기
+    dispatch(getMoreProducts(reauest));
+  };
+
 
   return (
     <>
@@ -63,19 +90,22 @@ function Main(props) {
             {/* Quiz3: 상품 정보를 props를 넘겨서 데이터 바인딩 */}
             {productList.map((product) => {
               console.log(product);
-              return <ProductListItem key={product.id} product={product}  />;
+              return <ProductListItem key={product.id} product={product} />;
             })}
-            
-            
+
+
           </Row>
+
         </Container>
 
-        {/* 상품 더보기 */}
-        <Button variant="secondary" className="mb-4"
+        {/* 1번째 상품 더보기 */}
+        {/* <Button variant="secondary" className="mb-4"
         onClick={() => {
           axios.get('http://localhost:4000/products')
             .then((response) => {
               console.log(response.data);
+              // 스토어에 dispatch로 요청 보내기
+              dispatch(getMoreProducts(response.data));
             })
             .catch((error) => {
               console.error(error);
@@ -84,7 +114,16 @@ function Main(props) {
         
         >
           더보기
-          </Button>
+          </Button> */}
+
+        {/* 2번째 상품 더보기 */}
+
+        {/* 위 HTTP 요청 코드를 함수로 만들어서 api폴더로 추출하고 async/await로 바꾸기 */}
+        <Button variant="secondary" className="mb-4" onClick={handleGetMoreProducts}>더보기</Button>
+
+        {/* thunk를 이용한 비동기 작업 처리하기 */}
+        <Button variant="secondary" className="mb-4" onClick={() => dispatch(getMoreProductsAsync())}>더보기{status}</Button>
+
       </section>
     </>
   );
