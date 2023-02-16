@@ -21,6 +21,7 @@ import {
 import data from "../data.json";
 import ProductListItem from '../components/ProductListItem';
 import { getProducts } from '../api/productAPI';
+import LatestView from '../components/LatestView';
 const MainBackground = styled.div`
 height: 500px;
 background-image: url(${yonexImg});
@@ -125,6 +126,8 @@ function Main(props) {
         <Button variant="secondary" className="mb-4" onClick={() => dispatch(getMoreProductsAsync())}>더보기{status}</Button>
 
       </section>
+
+      <LatestView/>
     </>
   );
 }

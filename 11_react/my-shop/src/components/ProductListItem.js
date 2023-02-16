@@ -17,16 +17,19 @@ function ProductListItem(props) {
 
   const navigate = useNavigate();
 
+  // 숫자 포맷 적용
+  const formatter = new Intl.NumberFormat('ko-KR');
+
   return (
     <StyledCol md={4} className="cursor-pointer">
-    <img src={product.imagePath} width="80%" 
-    // 이동 경로 설정하기
-    onClick={() => {
-      navigate(`/detail/${product.id}`);
-    }}/>
-    <h4>{product.title}</h4>
-    <p>상품가격{product.price}원</p>
-  </StyledCol>
+      <img src={product.imagePath} width="80%"
+        // 이동 경로 설정하기
+        onClick={() => {
+          navigate(`/detail/${product.id}`);
+        }} />
+      <h4>{product.title}</h4>
+      <p>{formatter.format(product.price)}원</p>
+    </StyledCol>
   );
 }
 
