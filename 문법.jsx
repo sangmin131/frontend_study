@@ -46,7 +46,7 @@ console.log(rel); // [2, 4, 6]
   //    onClick = {()=>{onClickitem(post);}}/>
   // })}
 
-
+1
 //splice
 copyTodos.splice(idx, 1); //인덱스를 넣어주고 1개를 삭제하겠다
 
