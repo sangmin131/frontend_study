@@ -5,4 +5,9 @@
 // props.title
 // }
 // 해결 
-// 다른곳에서 <Header props.title = '어쩌구'> 이라고 불러서 어쩌구 변경가능
+// 자식 컴포넌트에서 Header(props)로 받아서 사용가능
+// <Header props.title = '어쩌구'> 이라고 불러서 어쩌구 변경가능
+
+// 문제2. 자리 바꾸기 github
+// 자리 바꾸고 push가 안될때 인증 다 하고 올릴때 1번 해줌
+// git push orugin feature/login
